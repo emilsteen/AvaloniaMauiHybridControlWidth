@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using Avalonia.Maui;
+using Microsoft.Extensions.Logging;
 
 namespace MauiAvaloniaApplication
 {
@@ -9,6 +10,7 @@ namespace MauiAvaloniaApplication
             var builder = MauiApp.CreateBuilder();
             builder
                 .UseMauiApp<App>()
+                .UseAvalonia<AvaloniaApp>()
                 .ConfigureFonts(fonts =>
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
